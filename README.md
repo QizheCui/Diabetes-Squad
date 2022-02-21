@@ -13,5 +13,6 @@ Early Diagnosis of Diabetes
 2. Lei Johansson
 3. Tamjid Miah
 4. Sara Cheakdkaipejchara
+![image](https://user-images.githubusercontent.com/68168401/155001997-4f06d704-f8c8-4745-a6df-dd9f50fb3277.png)
 
 
