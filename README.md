@@ -6,4 +6,3 @@ This repository is for group 2 in the Imperial College London Year2 Interdiscipl
 2. Lei Johansson3. Tamjid Miah
 4. Sara Cheakdkaipejchara
 
-Creating our own problems T_T
