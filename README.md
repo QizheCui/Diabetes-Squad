@@ -3,6 +3,7 @@ This repository is for group 2 in the Imperial College London Year2 Interdiscipl
 
 # Group members:
 1. Ethan Cui
-2. Lei Johansson3. Tamjid Miah
+2. Lei Johansson
+3. Tamjid Miah
 4. Sara Cheakdkaipejchara
 
