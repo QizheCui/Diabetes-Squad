@@ -8,4 +8,4 @@ Early Diagnosis of Diabetes
 1. Ethan Cui
 2. Lei Johansson
 3. Tamjid Miah
-4. Sara Cheakdkaipejchara test
+4. Sara Cheakdkaipejchara
