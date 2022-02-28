@@ -12,7 +12,7 @@
 
 ## Problems related to the models:
 1. I am not familiar with the SVM model (will be great if John can explain)
-2. In the SVM model, the sensivity is surpursingly low
+2. In the SVM model, the sensitivity is surpursingly low
 3. In the logistics regression and decision tree model, the specificity is quite low
 
 
