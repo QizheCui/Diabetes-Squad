@@ -14,9 +14,11 @@
 1. I am not familiar with the SVM model (will be great if John can explain)
 2. In the SVM model, the sensitivity is surpursingly low
 3. In the logistics regression and decision tree model, the specificity is quite low
+4. TBC
 
 
 ## What I think potentially went wrong:
 1. The variables I selected did not significantly contribute to diabetes (so that the model doesn't make good prediction in general)
 2. I did not properly use regularization to control each variable
-3. My poor understanding of orange that created incorrect predictions
+3. My poor understanding of Orange that created incorrect predictions
+4. TBC
