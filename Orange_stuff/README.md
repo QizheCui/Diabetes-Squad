@@ -14,7 +14,8 @@
 1. I am not familiar with the SVM model (will be great if John can explain)
 2. In the SVM model, the sensitivity is surpursingly very low, specificity is also quite low
 3. In the logistics regression and decision tree model, sensivity is not ideal (you wouldn't want to use it for prediction)
-4. TBC
+4. Changed SVM kernel from RBF to Polynomial and now it performs better
+5. TBC
 
 
 ## What I think potentially went wrong:
