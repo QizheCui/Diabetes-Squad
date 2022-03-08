@@ -19,6 +19,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 tree = DecisionTreeClassifier(random_state=0)
 tree.fit(X_train,y_train)
 
+#Visualisation of model
 fig = plt.figure(figsize=(25,20))
 _ = plot_tree(tree, 
                    feature_names=['AGE','Urea','Cr','HbA1c','Chol','TG','HDL','LDL','VLDL','BMI','Male','Female'],  
