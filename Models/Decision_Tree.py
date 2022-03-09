@@ -4,8 +4,11 @@ from sklearn.tree import DecisionTreeClassifier, plot_tree
 from sklearn import tree
 from sklearn.model_selection import train_test_split
 
-#Read data
+#Read data and clean
 diabetes = pd.read_csv(r'C:\Users\hussi\IRC\project\Diabetes-Squad\EDA\Mendeley_normalised.csv')
+diabetes = diabetes.drop(diabetes.index[diabetes['CLASS'] == "P"])
+cleanup_nums = {"CLASS":{"Y":1, "N":0 }}
+diabetes = diabetes.replace(cleanup_nums)
 
 #Split the features from the classification
 X = diabetes.iloc[:,1:13]
@@ -20,9 +23,9 @@ tree = DecisionTreeClassifier(random_state=0)
 tree.fit(X_train,y_train)
 
 #Visualisation of model
-fig = plt.figure(figsize=(25,20))
+fig = plt.figure(figsize=(16,9))
 _ = plot_tree(tree, 
                    feature_names=['AGE','Urea','Cr','HbA1c','Chol','TG','HDL','LDL','VLDL','BMI','Male','Female'],  
-                   class_names=['N','P','Y'],
+                   class_names=['N','Y'],
                    filled=True)
 fig.savefig("decision_tree.png")
