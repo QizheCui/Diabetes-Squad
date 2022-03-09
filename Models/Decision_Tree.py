@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.tree import DecisionTreeClassifier, plot_tree 
-from sklearn import tree
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 
 #Read data and clean
@@ -29,3 +29,14 @@ _ = plot_tree(tree,
                    class_names=['N','Y'],
                    filled=True)
 fig.savefig("decision_tree.png")
+
+#Random Forest
+rf = RandomForestClassifier(random_state=0)
+rf.fit(X_train,y_train)
+
+fig = plt.figure(figsize=(16,9))
+_1 = plot_tree(tree, 
+                   feature_names=['AGE','Urea','Cr','HbA1c','Chol','TG','HDL','LDL','VLDL','BMI','Male','Female'],  
+                   class_names=['N','Y'],
+                   filled=True)
+fig.savefig("random_forest.png")
