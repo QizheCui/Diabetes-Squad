@@ -11,7 +11,7 @@ Early Diagnosis and prediction of Diabetes usinng one or more features
 4. Sara Cheakdkaipejchara
 
 # Datasets:
-Click [here](https://www.kaggle.com/andrewmvd/early-diabetes-classification)
+Click [here](https://data.mendeley.com/datasets/wj9rwkp9c2/1/files/2eb60cac-96b8-46ea-b971-6415e972afc9)
 
 # Background
 
