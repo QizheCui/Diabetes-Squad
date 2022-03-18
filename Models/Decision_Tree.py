@@ -1,10 +1,11 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-from sklearn.tree import DecisionTreeClassifier, plot_tree 
+from sklearn.tree import DecisionTreeClassifier, plot_tree, export_graphviz 
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split, cross_validate, cross_val_score
 from sklearn.metrics import plot_roc_curve, confusion_matrix, RocCurveDisplay
+import graphviz
 
 #Read data and clean
 diabetes = pd.read_csv(r'C:\Users\hussi\IRC\project\Diabetes-Squad\EDA\Mendeley_normalised.csv')
@@ -25,13 +26,16 @@ tree = DecisionTreeClassifier(random_state=0)
 tree.fit(X_train,y_train)
 
 #Visualisation of model
-fig = plt.figure(figsize=(16,9))
+fig = plt.figure(figsize=(25,9))
 _ = plot_tree(tree, 
                    feature_names=['AGE','Urea','Cr','HbA1c','Chol','TG','HDL','LDL','VLDL','BMI','Male','Female'],  
                    class_names=['N','Y'],
                    filled=True,
-                   impurity=False)
-fig.savefig("decision_tree.png")
+                   impurity=False,
+                   rounded=True,
+                   proportion=True)
+
+fig.savefig("decision_tree(1).png")
 
 #Random Forest
 rf = RandomForestClassifier(random_state=0)
@@ -59,3 +63,4 @@ print(confusion_matrix(y_test, y_pred2))
 RocCurveDisplay.from_estimator(tree, X_test, y_test)
 RocCurveDisplay.from_estimator(rf, X_test, y_test)
 #plt.show()
+
