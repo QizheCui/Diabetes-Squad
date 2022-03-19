@@ -33,7 +33,7 @@ _ = plot_tree(tree,
                    filled=True,
                    impurity=False,
                    rounded=True,
-                   proportion=True,
+                   #proportion=True,
                    max_depth=4)
 
 fig.savefig("decision_tree(1).png")
