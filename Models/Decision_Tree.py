@@ -8,9 +8,9 @@ from sklearn.metrics import plot_roc_curve, confusion_matrix, RocCurveDisplay
 import graphviz
 
 #Read data and clean
-diabetes = pd.read_csv(r'C:\Users\hussi\IRC\project\Diabetes-Squad\EDA\Mendeley_normalised.csv')
+diabetes = pd.read_csv(r'C:\Users\hussi\IRC\project\Diabetes-Squad\EDA\Mendeley.csv')
 diabetes = diabetes.drop(diabetes.index[diabetes['CLASS'] == "P"])
-cleanup_nums = {"CLASS":{"Y":1, "N":0 }}
+cleanup_nums = {"Gender":{"M": 1, "F": 0}, "CLASS":{"Y":1, "N":0 }}
 diabetes = diabetes.replace(cleanup_nums)
 
 #Split the features from the classification
@@ -56,7 +56,7 @@ print(confusion_matrix(y_test, y_pred2))
 #[[ 22   0]
 # [  0 215]]
 #Random Forest
-#[[ 21   1]
+#[[ 20   2]
 # [  0 215]]
 
 
