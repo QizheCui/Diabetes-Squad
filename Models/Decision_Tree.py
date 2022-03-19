@@ -14,8 +14,11 @@ cleanup_nums = {"Gender":{"M": 1, "F": 0}, "CLASS":{"Y":1, "N":0 }}
 diabetes = diabetes.replace(cleanup_nums)
 
 #Split the features from the classification
-X = diabetes.iloc[:,1:13]
+X = diabetes.iloc[:,2:13]
 y = diabetes.iloc[:,-1]
+print(diabetes)
+print(X)
+print(y)
 
 #Randomly split the data into training and testing sets with proportion 75%:25%
 X_train, X_test, y_train, y_test = train_test_split(
@@ -28,12 +31,13 @@ tree.fit(X_train,y_train)
 #Visualisation of model
 fig = plt.figure(figsize=(25,9))
 _ = plot_tree(tree, 
-                   feature_names=['AGE','Urea','Cr','HbA1c','Chol','TG','HDL','LDL','VLDL','BMI','Male','Female'],  
+                   feature_names=['Gender','AGE','Urea','Cr','HbA1c','Chol','TG','HDL','LDL','VLDL','BMI'],  
                    class_names=['N','Y'],
                    filled=True,
                    impurity=False,
                    rounded=True,
-                   proportion=True)
+                   proportion=True,
+                   max_depth=4)
 
 fig.savefig("decision_tree(1).png")
 
