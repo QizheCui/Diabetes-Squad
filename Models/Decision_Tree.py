@@ -16,9 +16,6 @@ diabetes = diabetes.replace(cleanup_nums)
 #Split the features from the classification
 X = diabetes.iloc[:,2:13]
 y = diabetes.iloc[:,-1]
-print(diabetes)
-print(X)
-print(y)
 
 #Randomly split the data into training and testing sets with proportion 75%:25%
 X_train, X_test, y_train, y_test = train_test_split(
@@ -29,7 +26,7 @@ tree = DecisionTreeClassifier(random_state=0)
 tree.fit(X_train,y_train)
 
 #Visualisation of model
-fig = plt.figure(figsize=(25,9))
+fig = plt.figure(figsize=(10,10))
 _ = plot_tree(tree, 
                    feature_names=['Gender','AGE','Urea','Cr','HbA1c','Chol','TG','HDL','LDL','VLDL','BMI'],  
                    class_names=['N','Y'],
