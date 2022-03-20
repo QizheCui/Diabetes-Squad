@@ -57,11 +57,10 @@ print(confusion_matrix(y_test, y_pred2))
 #[[ 22   0]
 # [  0 215]]
 #Random Forest
-#[[ 20   2]
+#[[ 21   1]
 # [  0 215]]
 
 
 RocCurveDisplay.from_estimator(tree, X_test, y_test)
 RocCurveDisplay.from_estimator(rf, X_test, y_test)
 #plt.show()
-
