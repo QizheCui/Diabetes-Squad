@@ -26,7 +26,7 @@ tree = DecisionTreeClassifier(random_state=0)
 tree.fit(X_train,y_train)
 
 #Visualisation of model
-fig = plt.figure(figsize=(10,10))
+fig = plt.figure(figsize=(12,10))
 _ = plot_tree(tree, 
                    feature_names=['Gender','AGE','Urea','Cr','HbA1c','Chol','TG','HDL','LDL','VLDL','BMI'],  
                    class_names=['N','Y'],
@@ -36,7 +36,7 @@ _ = plot_tree(tree,
                    #proportion=True,
                    max_depth=4)
 
-fig.savefig("decision_tree(1).png")
+fig.savefig("decision_tree(3).png")
 
 #Random Forest
 rf = RandomForestClassifier(random_state=0)
