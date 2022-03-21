@@ -8,13 +8,13 @@ from sklearn.metrics import plot_roc_curve, confusion_matrix, RocCurveDisplay
 import graphviz
 
 #Read data and clean
-diabetes = pd.read_csv(r'C:\Users\hussi\IRC\project\Diabetes-Squad\EDA\Mendeley_normalised.csv')
+diabetes = pd.read_csv(r'C:\Users\hussi\IRC\project\Diabetes-Squad\EDA\Mendeley.csv')
 diabetes = diabetes.drop(diabetes.index[diabetes['CLASS'] == "P"])
-cleanup_nums = {"CLASS":{"Y":1, "N":0 }}
+cleanup_nums = {"Gender":{"M": 1, "F": 0}, "CLASS":{"Y":1, "N":0 }}
 diabetes = diabetes.replace(cleanup_nums)
 
 #Split the features from the classification
-X = diabetes.iloc[:,1:13]
+X = diabetes.iloc[:,2:13]
 y = diabetes.iloc[:,-1]
 
 #Randomly split the data into training and testing sets with proportion 75%:25%
@@ -26,16 +26,17 @@ tree = DecisionTreeClassifier(random_state=0)
 tree.fit(X_train,y_train)
 
 #Visualisation of model
-fig = plt.figure(figsize=(25,9))
+fig = plt.figure(figsize=(12,10))
 _ = plot_tree(tree, 
-                   feature_names=['AGE','Urea','Cr','HbA1c','Chol','TG','HDL','LDL','VLDL','BMI','Male','Female'],  
+                   feature_names=['Gender','AGE','Urea','Cr','HbA1c','Chol','TG','HDL','LDL','VLDL','BMI'],  
                    class_names=['N','Y'],
                    filled=True,
                    impurity=False,
                    rounded=True,
-                   proportion=True)
+                   #proportion=True,
+                   max_depth=4)
 
-fig.savefig("decision_tree(1).png")
+fig.savefig("decision_tree(3).png")
 
 #Random Forest
 rf = RandomForestClassifier(random_state=0)
@@ -63,4 +64,3 @@ print(confusion_matrix(y_test, y_pred2))
 RocCurveDisplay.from_estimator(tree, X_test, y_test)
 RocCurveDisplay.from_estimator(rf, X_test, y_test)
 #plt.show()
-
