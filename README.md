@@ -34,7 +34,8 @@ model description, what parameter did we choose? its performance? any additional
 The model create a hyperplane that tries to seperate the data into 2 groups. Although RBF is the most commonly used kernel, the linear kernel performs better in our dataset which gives accuracy around 0.94.
 
 ## Random Forest / Decision Tree
-model description, what parameter did we choose? its performance? any additional info ...
+A decision tree model works by considering features that seem to be the best indicators of a class then creating branches based on whether or not a certain condition is met by the sample points. This creates branches from combinations of features and the aim is to identify subgroups where the majority of sample points fall into a certain class. When given test data, the model can then make a classification prediction by identifying which subgroup the test points fall into. A random forest model creates random samples of decision trees from the sample data to reduce the risk of overfitting.
+
 ## K Nearest Neighbour
 model description, what parameter did we choose? its performance? any additional info ...
 
