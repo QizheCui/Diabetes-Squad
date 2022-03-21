@@ -31,6 +31,7 @@ In the data prepocessing stage, we scaled the mean of each feature to 0. We have
 ## Logistic Regression
 This model uses a logistic curve (example shown below) to model a dependent variable that can take one of two results. In our case, this would be whether or not the patient has diabetes. The different features are thus plotted and a logistic curve fitted to determine the relationship between the features and the diabetes diagnosis.
 ![image](https://github.com/QizheCui/Diabetes-Squad/blob/main/logistic_function_desmos.png)
+Logistic Function plotted in Desmos
 ## Support Vector Machine
 The model create a hyperplane that tries to seperate the data into 2 groups. Although RBF is the most commonly used kernel, the linear kernel performs better in our dataset which gives accuracy around 0.94.
 
