@@ -14,6 +14,7 @@ Early Diagnosis and prediction of Diabetes usinng one or more features
 Click [here](https://data.mendeley.com/datasets/wj9rwkp9c2/1/files/2eb60cac-96b8-46ea-b971-6415e972afc9)
 
 # Background
+Diabetes is one of the leading causes of death in the world, with an estimated 422 million people affected worldwide (WHO) (2020). Recently, there has been a surge in research to increase the chance of early detection. We tested 4 different supervised ML models including Logistic Regression, K- nearest neighbours, Random forest and SVM, to see which performed most accurately in predicting diabetes.
 
 # Initial Visualzation
 By our initial scatter plot, we found out that age, HbA1c and BMI are strong indicators of diabetes as shown below:
@@ -30,7 +31,8 @@ In the data prepocessing stage, we scaled the mean of each feature to 0. We have
 ## Logistic Regression
 model description, what parameter did we choose? its performance? any additional info ...
 ## Support Vector Machine
-model description, what parameter did we choose? its performance? any additional info ...
+The model create a hyperplane that tries to seperate the data into 2 groups. Although RBF is the most commonly used kernel, the linear kernel performs better in our dataset which gives accuracy around 0.94.
+
 ## Random Forest / Decision Tree
 model description, what parameter did we choose? its performance? any additional info ...
 ## K Nearest Neighbour
@@ -38,8 +40,12 @@ model description, what parameter did we choose? its performance? any additional
 
 # ROC Analysis
 Based on our ROC analysis, we can see that random forest gives the highest AUC =1 , while KNN has AUC around 0.95. All models have accuracy >= 90%.
+<img width="1172" alt="ROC curve =" src="https://user-images.githubusercontent.com/68168401/159257898-ca6c38e2-3faf-4f6c-b32f-36ba79c1dcf7.png">
 
 
 # Comparision to external dataset
 When we compare our models to external dataset, we observe lower precision.
 ![image](https://user-images.githubusercontent.com/68168401/159133062-388bb14f-924a-4610-a2f3-8ca77741cf8f.png)
+
+# Finally... Our Poster!
+[IRC_project_poster_group2.pdf](https://github.com/QizheCui/Diabetes-Squad/files/8315231/IRC_project_poster_group2.pdf)
