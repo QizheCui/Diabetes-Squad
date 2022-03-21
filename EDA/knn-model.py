@@ -30,3 +30,5 @@ accuracy = np.mean(y_test == clf.predict(X_test))
 
 #Final output
 print(accuracy)
+
+#accuracy value = 0.9367088607594937
