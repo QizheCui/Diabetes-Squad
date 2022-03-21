@@ -29,7 +29,8 @@ Therefore, we focus on the distribution of each of these feature and find out th
 # Machine Learning Models
 In the data prepocessing stage, we scaled the mean of each feature to 0. We have implemented 4 models and they are:
 ## Logistic Regression
-model description, what parameter did we choose? its performance? any additional info ...
+This model uses a logistic curve (example shown below) to model a dependent variable that can take one of two results. In our case, this would be whether or not the patient has diabetes. The different features are thus plotted and a logistic curve fitted to determine the relationship between the features and the diabetes diagnosis.
+![image](https://github.com/QizheCui/Diabetes-Squad/blob/main/logistic_function_desmos.png=
 ## Support Vector Machine
 The model create a hyperplane that tries to seperate the data into 2 groups. Although RBF is the most commonly used kernel, the linear kernel performs better in our dataset which gives accuracy around 0.94.
 
