@@ -29,8 +29,13 @@ Therefore, we focus on the distribution of each of these feature and find out th
 # Machine Learning Models
 In the data prepocessing stage, we scaled the mean of each feature to 0. We have implemented 4 models and they are:
 ## Logistic Regression
-This model uses a logistic curve (example shown below) to model a dependent variable that can take one of two results. In our case, this would be whether or not the patient has diabetes. The different features are thus plotted and a logistic curve fitted to determine the relationship between the features and the diabetes diagnosis.
-![image](https://github.com/QizheCui/Diabetes-Squad/blob/main/logistic_function_desmos.png)
+This model uses a logistic curve (shown below) to model a dependent variable that can take one of two results. In our case, this would be whether or not the patient has diabetes. The different features are thus plotted and a logistic curve fitted to determine the relationship between the features and the diabetes diagnosis.
+![image](https://github.com/QizheCui/Diabetes-Squad/blob/main/Models/BMI_logistic.png)
+
+From the above image, we can see that a BMI above 25 is associated with an increased probability of a patient having diabetes.
+![image](https://github.com/QizheCui/Diabetes-Squad/blob/main/Models/age_logistic.png)
+
+Similarly, older patients have a higher probability of having diabetes.
 
 Logistic Function plotted in Desmos
 ## Support Vector Machine
