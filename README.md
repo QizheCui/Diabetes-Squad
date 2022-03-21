@@ -37,7 +37,7 @@ From the above image, we can see that a BMI above 25 is associated with an incre
 
 Similarly, older patients have a higher probability of having diabetes.
 
-Logistic Function plotted in Desmos
+These initial plots were plotted in python using Matplotlib. The logistics function was fitted using Scipy optimize to fit the data to a logistic function and obtain the coefficients
 ## Support Vector Machine
 The model create a hyperplane that tries to seperate the data into 2 groups. Although RBF is the most commonly used kernel, the linear kernel performs better in our dataset which gives accuracy around 0.94.
 
