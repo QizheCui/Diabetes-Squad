@@ -40,7 +40,7 @@ A decision tree model works by considering features that seem to be the best ind
 model description, what parameter did we choose? its performance? any additional info ...
 
 # ROC Analysis
-Based on our ROC analysis, we can see that random forest gives the highest AUC =1 , while KNN has AUC around 0.95. All models have accuracy >= 90%.
+Based on our ROC analysis, we can see that logistic regression model gives the highest AUC = 0.977 , while SVC has AUC around 0.975. All models have accuracy >= 95%.
 <img width="1172" alt="ROC curve =" src="https://user-images.githubusercontent.com/68168401/159257898-ca6c38e2-3faf-4f6c-b32f-36ba79c1dcf7.png">
 
 
