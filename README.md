@@ -40,7 +40,7 @@ The model create a hyperplane that tries to seperate the data into 2 groups. Alt
 A decision tree model works by considering features that seem to be the best indicators of a class then creating branches based on whether or not a certain condition is met by the sample points. This creates branches from combinations of features and the aim is to identify subgroups where the majority of sample points fall into a certain class. When given test data, the model can then make a classification prediction by identifying which subgroup the test points fall into. A random forest model creates random samples of decision trees from the sample data to reduce the risk of overfitting.
 
 ## K Nearest Neighbour
-model description, what parameter did we choose? its performance? any additional info ...
+This model is a non-parametric machine learning method. The model is trained using a set of data, any data input after is then compared to the existing data, and it's membership of the class (Diabetic or Non-Diabetic) is determined by the class of it's nearest neighbour in terms of the different features. For example, if the data point most similar to the input data point is Diabetic, that input data point will be classed as Diabetic 
 
 # ROC Analysis
 Based on our ROC analysis, we can see that logistic regression model gives the highest AUC = 0.977 , while SVC has AUC around 0.975. All models have accuracy >= 95%.
